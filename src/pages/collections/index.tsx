@@ -148,6 +148,11 @@ export function Collections() {
 
     const handleEditCollection = () => {
         editCollectionName(id, titleCollection);
+        setMessage("success edit collection")
+
+        setTimeout(() => {
+            setMessage("")
+        }, 2500)
     }
 
     return (
