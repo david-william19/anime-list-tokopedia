@@ -94,7 +94,7 @@ export function Cards(props: CardProps) {
                 />}
                 <img alt="cover-image-card" src={props.image} />
                 <ButtonAddCollection onClick={props.isOpenModal}>
-                    <img className="add-folder-icon" alt="icon" src="public/icons/add-folder.svg" />
+                    <img className="add-folder-icon" alt="icon" src="/icons/add-folder.svg" />
                 </ButtonAddCollection>
             </ImageCard>
             <LinkAnime to={`anime-detail/${props.id}`}>

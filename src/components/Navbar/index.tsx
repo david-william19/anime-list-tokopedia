@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
     return (
         <NavbarContainer>
             <Link to={"/"}>
-                <img alt="logo" src="/public/icons/logo.svg" />
+                <img alt="logo" src="/icons/logo.svg" />
             </Link>
             <div className="nav-items">
                 <Link to={'/my-collections'}>My collections</Link>
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             
             {/* mobile menu */}
             <MenuButton onClick={MenuContainer}>
-                <img alt="menu-icon" src="/public/icons/menu-icon.png" />
+                <img alt="menu-icon" src="/icons/menu-icon.png" />
             </MenuButton>
             {
                 isOpenMenu &&
