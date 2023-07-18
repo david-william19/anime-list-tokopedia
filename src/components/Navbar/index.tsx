@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Modal from "../Modal";
 
 const NavbarContainer = styled.div`
     padding: 30px 20px;
@@ -39,13 +38,6 @@ const NavbarContainer = styled.div`
                 }
             }
     }
-`
-
-const SearchInput = styled.input`
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 500px;
-    text-align: center;
 `
 
 const MenuButton = styled.button`

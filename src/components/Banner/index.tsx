@@ -1,5 +1,4 @@
 import styled from "@emotion/styled"
-import Modal from "../Modal";
 
 const ContainerHeader = styled.div`
     width: 100%;

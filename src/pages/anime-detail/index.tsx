@@ -1,7 +1,7 @@
 import { useQuery } from "@apollo/client";
 import Layout from "../../components/Layout";
 import { GET_ANIME_LIST } from "../../services/Anime";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { TData } from "../../types/data";
 import styled from "@emotion/styled";
 import SkeletonLoading from "../../components/Skeleton";

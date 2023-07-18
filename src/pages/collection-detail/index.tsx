@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import Banner from "../../components/Banner"
 import Layout from "../../components/Layout"
-import { CollectionContextType, TCollection } from "../../types/collections";
+import { CollectionContextType } from "../../types/collections";
 import { AnimeContext } from "../../context/context";
 import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
@@ -75,8 +75,10 @@ export function CollectionDetail() {
     const { getCollectionById, deleteFromCollection } = useContext(AnimeContext) as CollectionContextType;
 
     useEffect(() => {
+        setLoading(true)
         if(id){
             getCollectionById(parseInt(id)).then(res => {
+                setLoading(false)
                 setCollectionDetail(res)
             }).catch(err => console.log(err))
         }
